@@ -1,0 +1,32 @@
+2x2x2 puzzles:
+
+By increasing the maximum nodes per iteration to 5000000, optimal solutions could be found for 2x2x2 puzzles.
+
+
+Wreath puzzles:
+
+By increasing nodes per iteration to 5000000, optimal solutions could be found for wreath puzzles up to 12/12.  Larger puzzles would time out.
+
+
+IDA* Algorithm:
+
+The algorithm/notebook I'm using has some oddities that are limiting its ability to find optimal solutions for difficult puzzles, such as 3x3x3 and larger Rubik's Cubes.  
+
+* At the end of each iteration, only the best node is used to start the next iteration of search.  This is too greedy and results in very long solutions due to starting at a locally good solution that is globally poor.
+
+* The number of nodes per iteration needs to be extremely large in order to get adequate depth for each iteration.
+
+* For each iteration, the closed set is downsampled randomly, which seems counter intuitive.
+
+* The heuristic seems overly complex and I believe will over-estimate distance to the goal.
+
+** Returning the entire frontier of the search, or a subest of those, will prevent loss of suboptimal states.  This should also be coupled with a very large number of maximum nodes per iteration to ensure adequate depth coverage.  A basic heuristic is just the number of misplaced cubies, but a more detailed heuristic, such as (number of moves to set the corners + numeer of moves to set the edges) would be potentially more accurate. 
+
+** Larger Rubik's cubes are going to need a hierarchical approach, such as solvng the center followed by solving each additional layer or shell of cubies.  To some extent the search space can be limited by limiting the number of valid turns to search, e.g., for any cube with an odd number of layers, the middle layers don't necesarily need to be turned, thus decreasing the branching factor of the search tree.
+
+24.01.02
+
+* Run all 3x3x3 solutions from ensemble through kstep.
+* Run all wreath solutions from ensemble through kstep.
+* Run all reasonably sized globe solutions through kstep.
+* For all solutions, consider removing inverse pairs:  mi and -mi can be cancelled as long as there are same group moves between them, e.g., mi.(m?.-m?...).-mi => (m?.-m?...)

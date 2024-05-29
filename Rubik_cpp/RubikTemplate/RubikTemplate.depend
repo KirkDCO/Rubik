@@ -1,0 +1,117 @@
+# depslib dependency file v1.0
+1351716476 source:e:\rubik\rubiktemplate\main.cpp
+	<iostream>
+	<time.h>
+	"Cube2.h"
+	"GraphSearch.h"
+	"Cube2Heuristic.h"
+
+1350514638 istic.h"
+
+1351637330 e:\rubik\rubiktemplate\cube2.h
+	<vector>
+	<sstream>
+	"constants.h"
+
+1354149336 .h"
+
+1354149470 e:\rubik\rubiktemplate\graphsearch.h
+	<vector>
+	<map>
+	<string>
+	<algorithm>
+	<iostream>
+	<fstream>
+	"GraphSearchUtilityFxns.h"
+
+1354149470 chUtilityFxns.h"
+
+1351637906 source:e:\rubik\rubiktemplate\cube2.cpp
+	<iostream>
+	<cmath>
+	<cstdlib>
+	<time.h>
+	<vector>
+	<sstream>
+	"Cube2.h"
+
+1351108020 
+
+1354663400 e:\rubik\rubiktemplate\constants.h
+
+1350512174 e:\rubik\rubiktemplate\heuristic.h
+
+1350514638 source:e:\rubik\rubiktemplate\cube2heuristic.cpp
+	<fstream>
+	<string>
+	<sstream>
+	"Cube2Heuristic.h"
+
+1351108020 e:\rubik\rubiktemplate\cube2heuristic.h
+	<map>
+	<fstream>
+	<string>
+	<sstream>
+	<iostream>
+
+1354149576 e:\rubik\rubiktemplate\graphsearchutilityfxns.h
+	"Cube2.h"
+
+1354149336 e:\rubik\rubiktemplate\cube3.h
+	<vector>
+	<sstream>
+	"constants.h"
+
+1354149370 source:e:\rubik\rubiktemplate\cube3.cpp
+	<iostream>
+	<cmath>
+	<cstdlib>
+	<time.h>
+	<vector>
+	<sstream>
+	"Cube3.h"
+
+1351641506 source:/run/media/KirkD/8095-4693/Rubik/RubikTemplate/Cube2.cpp
+	<iostream>
+	<cmath>
+	<cstdlib>
+	<time.h>
+	<vector>
+	<sstream>
+	"Cube2.h"
+
+1351640930 /run/media/KirkD/8095-4693/Rubik/RubikTemplate/Cube2.h
+	<vector>
+	<sstream>
+	"constants.h"
+
+1356857989 /run/media/KirkD/8095-4693/Rubik/RubikTemplate/constants.h
+	<map>
+	<string>
+
+1351720076 source:/run/media/KirkD/8095-4693/Rubik/RubikTemplate/main.cpp
+	<iostream>
+	<time.h>
+	"Cube2.h"
+	"GraphSearch.h"
+	"Cube2Heuristic.h"
+
+1354149470 /run/media/KirkD/8095-4693/Rubik/RubikTemplate/GraphSearch.h
+	<vector>
+	<map>
+	<string>
+	<algorithm>
+	<iostream>
+	<fstream>
+	"GraphSearchUtilityFxns.h"
+
+1354149576 /run/media/KirkD/8095-4693/Rubik/RubikTemplate/GraphSearchUtilityFxns.h
+	"Cube2.h"
+
+1351111620 /run/media/KirkD/8095-4693/Rubik/RubikTemplate/Cube2Heuristic.h
+	<map>
+	<fstream>
+	<string>
+	<sstream>
+	<iostream>
+
